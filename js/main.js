@@ -49,6 +49,6 @@ var $carousel2 = $('.section4-main-box').flickity({
     contain: true,
     // disable previous & next buttons and dots
     prevNextButtons: true,
-    pageDots: true
+    pageDots: false
 });
 

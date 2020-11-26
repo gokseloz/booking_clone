@@ -812,7 +812,7 @@ https://flickity.metafizzy.co
     .section1 {
       border-top: none;
       border-bottom: none;
-      margin-top: 0px; } }
+      margin-top: 20px; } }
   .section1-main {
     display: flex;
     flex-direction: column;
@@ -834,7 +834,7 @@ https://flickity.metafizzy.co
         text-align: left;
         padding: 30px;
         margin-bottom: 50px;
-        margin-top: 50px;
+        margin-top: 20px;
         transition: box-shadow .3s; } }
     .section1-item:hover {
       box-shadow: 5px 5px 30px rgba(221, 221, 221, 0.2), -5px -5px 30px rgba(221, 221, 221, 0.2); }
@@ -919,8 +919,24 @@ https://flickity.metafizzy.co
         height: 44px;
         margin-top: -10px;
         font-size: 12px; }
-        .section2-main-item:nth-child(6):hover {
-          background-color: #1e5799; }
+        .section2-main-item:nth-child(6):hover::before {
+          z-index: -1; }
+          @media (min-width: 768px) {
+            .section2-main-item:nth-child(6):hover::before {
+              width: 100%;
+              z-index: 0; } }
+        .section2-main-item:nth-child(6)::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0%;
+          width: 1%;
+          height: 100%;
+          transition: width 1s;
+          background-color: #083b87;
+          z-index: -1; }
+        .section2-main-item:nth-child(6) p {
+          z-index: 2; }
         @media (min-width: 768px) {
           .section2-main-item:nth-child(6) {
             background-color: #01acee;
@@ -1027,7 +1043,7 @@ https://flickity.metafizzy.co
       @media (min-width: 768px) {
         .section3-main-item {
           padding-left: 100px;
-          padding-right: 150px;
+          padding-right: 130px;
           flex-direction: row;
           text-align: left; } }
       .section3-main-item-img {
@@ -1092,7 +1108,10 @@ https://flickity.metafizzy.co
     @media (min-width: 768px) {
       .section4-main-item {
         width: 250px;
-        height: 250px; } }
+        height: 250px; }
+        .section4-main-item:hover {
+          border: 1px solid #febb02;
+          box-shadow: 1px 20px 30px inset rgba(0, 0, 0, 0.2); } }
     .section4-main-item + .section4-main-item {
       margin-left: 20px; }
       @media (min-width: 768px) {
@@ -1105,7 +1124,7 @@ https://flickity.metafizzy.co
       left: 0;
       width: 100%;
       height: 100%;
-      background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)); }
+      background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)); }
     .section4-main-item-price {
       position: absolute;
       right: 10px;
@@ -1169,57 +1188,57 @@ https://flickity.metafizzy.co
           .section4-main-item-content-paragraph {
             font-size: 14px; } }
 
-.section7 {
+.section5 {
   margin-top: 40px; }
-  .section7 .container {
+  .section5 .container {
     padding-left: 10px;
     padding-right: 10px; }
   @media (min-width: 768px) {
-    .section7 {
+    .section5 {
       margin-top: 70px; } }
-  .section7-main {
+  .section5-main {
     display: flex;
     flex-direction: column;
     align-items: center;
     max-width: 1200px; }
-    .section7-main-header {
+    .section5-main-header {
       width: 100%;
       text-align: center;
       color: #083b87;
       font-size: 20px; }
       @media (min-width: 768px) {
-        .section7-main-header {
+        .section5-main-header {
           width: 100%;
           text-align: center;
           color: #083b87;
           font-size: 24px; } }
-    .section7-main-list {
+    .section5-main-list {
       width: 100%;
       display: flex;
       flex-direction: column; }
-      .section7-main-list .list-tab {
+      .section5-main-list .list-tab {
         display: flex;
         flex-direction: row;
         margin-top: 20px;
         justify-content: center;
         border-bottom: 1px solid #083b87; }
         @media (min-width: 768px) {
-          .section7-main-list .list-tab {
+          .section5-main-list .list-tab {
             margin-top: 30px; } }
-        .section7-main-list .list-tab-btn {
+        .section5-main-list .list-tab-btn {
           padding: 5px 10px;
           font-size: 13px;
           cursor: pointer; }
           @media (min-width: 768px) {
-            .section7-main-list .list-tab-btn {
+            .section5-main-list .list-tab-btn {
               padding: 10px 20px;
               font-size: 14px;
               cursor: pointer; } }
-        .section7-main-list .list-tab-btn.active {
+        .section5-main-list .list-tab-btn.active {
           cursor: default;
           background-color: #083b87;
           color: #fff; }
-      .section7-main-list .list-body {
+      .section5-main-list .list-body {
         display: flex;
         justify-content: flex-start;
         align-items: center;
@@ -1229,11 +1248,11 @@ https://flickity.metafizzy.co
         padding-top: 20px;
         padding-bottom: 20px; }
         @media (min-width: 768px) {
-          .section7-main-list .list-body {
+          .section5-main-list .list-body {
             row-gap: 20px;
             padding-top: 0px;
             padding-bottom: 0px; } }
-        .section7-main-list .list-body-item {
+        .section5-main-list .list-body-item {
           width: 33.33334%;
           height: 44px;
           box-sizing: border-box;
@@ -1244,7 +1263,7 @@ https://flickity.metafizzy.co
           line-height: 18px;
           font-size: 13px; }
           @media (min-width: 768px) {
-            .section7-main-list .list-body-item {
+            .section5-main-list .list-body-item {
               width: 20%;
               height: 66px;
               box-sizing: border-box;
@@ -1254,22 +1273,22 @@ https://flickity.metafizzy.co
               align-items: flex-start;
               line-height: 24px;
               font-size: 16px; } }
-        .section7-main-list .list-body-link {
+        .section5-main-list .list-body-link {
           color: #083b87;
           font-weight: bold;
           text-align: center; }
           @media (min-width: 768px) {
-            .section7-main-list .list-body-link {
+            .section5-main-list .list-body-link {
               width: 100%;
               text-align: left; } }
-          .section7-main-list .list-body-link:hover {
+          .section5-main-list .list-body-link:hover {
             color: #bc5b01; }
-        .section7-main-list .list-body .review-num {
+        .section5-main-list .list-body .review-num {
           display: block;
           opacity: .5;
           text-align: center; }
           @media (min-width: 768px) {
-            .section7-main-list .list-body .review-num {
+            .section5-main-list .list-body .review-num {
               display: block;
               opacity: .5;
               text-align: left; } }

@@ -64,8 +64,8 @@
             align-items: center;
             opacity: 0.7;
             cursor: pointer;
-            
-            
+
+
 
             @include mq ("tablet") {
                 width: auto;
@@ -239,7 +239,7 @@
 
 .highlights {
     margin-top: 5px;
-    
+
     @include mq ("tablet") {
         margin-top: -100px;
     }
@@ -249,7 +249,7 @@
         padding-left: 10px;
         padding-right: 10px;
         height: 210px;
-        
+
 
         @include mq ("tablet") {
             background: transparent;
@@ -269,7 +269,7 @@
         width: 300px;
         height: auto;
         margin-right: 30px;
-        
+
         @include mq ("tablet") {
             width: 300px;
             height: 200px;
@@ -281,7 +281,7 @@
             width: 300px;
             display: flex;
             flex-direction: column;
-            
+
             @include mq ("tablet") {
                 width: 630px;
                 display: flex;
@@ -290,8 +290,8 @@
 
             .highlights-item-show {
                 width: 100%;
-                
-                
+
+
                 @include mq ("tablet") {
                     width: 45%;
                 }
@@ -303,7 +303,7 @@
                 z-index: 1;
                 display: flex;
                 flex-direction: column;
-                
+
                 @include mq ("tablet") {
                     width: 55%;
                 }
@@ -428,13 +428,13 @@
     border-bottom: 2px solid #000;
     margin-top: 10px;
     padding-bottom: 10px;
-    
+
 
 
     @include mq ("tablet") {
         border-top: none;
         border-bottom: none;
-        margin-top: 0px;
+        margin-top: 20px;
     }
 
     &-main {
@@ -454,20 +454,23 @@
         transition: box-shadow .3s;
         text-align: center;
 
-        &:not(:nth-child(1)){  //select all childs besides FIRST child
+        &:not(:nth-child(1)) {
+            //select all childs besides FIRST child
             margin-top: 20px;
         }
-       
+
 
         @include mq ("tablet") {
             width: 250px;
             text-align: left;
             padding: 30px;
             margin-bottom: 50px;
-            margin-top: 50px;
+            margin-top: 20px;
             transition: box-shadow .3s;
-            
-           
+
+
+
+
         }
 
         &:hover {
@@ -587,9 +590,35 @@
                 margin-top: -10px;
                 font-size: 12px;
 
-                &:hover {
-                    background-color: rgba(30, 87, 153, 1);
+
+                &:hover::before {
+                    
+                    z-index: -1;
+
+                    @include mq ("tablet") {
+                        width: 100%;
+                        z-index: 0;
+                    }
+
                 }
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0%;
+                    width: 1%;
+                    height: 100%;
+                    transition: width 1s;
+                    background-color: $color-navy;
+                    z-index: -1;
+                }
+
+                p {
+                    z-index: 2;
+                }
+
+
 
                 @include mq ("tablet") {
                     background-color: $color-blue;
@@ -736,7 +765,7 @@
 
             @include mq ("tablet") {
                 padding-left: 100px;
-                padding-right: 150px;
+                padding-right: 130px;
                 flex-direction: row;
                 text-align: left;
             }
@@ -792,30 +821,30 @@
 .section4 {
     margin-top: 50px;
 
-    @include mq ("tablet"){
+    @include mq ("tablet") {
         margin-top: 100px;
     }
 
-    &-header{
+    &-header {
         text-align: center;
         margin-bottom: 20px;
         color: $color-navy;
         font-size: 20px;
 
-        @include mq ("tablet"){
+        @include mq ("tablet") {
             margin-bottom: 50px;
             color: $color-navy;
             font-size: 24px;
         }
     }
-    
+
     &-main {
-        .flickity-page-dots{
+        .flickity-page-dots {
             bottom: 10px;
         }
 
-        .flickity-button{
-           top: 120px;
+        .flickity-button {
+            top: 120px;
         }
 
         &-item {
@@ -832,9 +861,15 @@
             @include mq ("tablet") {
                 width: 250px;
                 height: 250px;
+
+                &:hover {
+                    border: 1px solid #febb02;
+                    box-shadow: 1px 20px 30px inset rgba(0, 0, 0, 0.2);
+                }
             }
 
-            &+& {                       //select this(section4-main-item) coming after by this(section4-main-item)
+            &+& {
+                //select this(section4-main-item) coming after by this(section4-main-item)
                 margin-left: 20px;
 
                 @include mq ("tablet") {
@@ -849,7 +884,7 @@
                 left: 0;
                 width: 100%;
                 height: 100%;
-                background: linear-gradient(rgba(0 ,0 ,0, 0.3), rgba(0 ,0, 0, 0.3));
+                background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
 
             }
 
@@ -904,7 +939,7 @@
                 padding: 10px;
                 text-align: left;
                 z-index: 10;
-                
+
 
                 @include mq ("tablet") {
                     color: #fff;
@@ -922,14 +957,15 @@
                         margin-left: 18px;
                     }
                 }
-                
-                &-header{
+
+                &-header {
                     font-size: 16px;
 
                     @include mq ("tablet") {
                         font-size: 18px;
                     }
                 }
+
                 &-paragraph {
                     font-size: 12px;
                     margin-top: 10px;
@@ -937,15 +973,14 @@
                     @include mq ("tablet") {
                         font-size: 14px;
                     }
-                    
+
                 }
             }
         }
     }
 }
 
-
-.section7 {
+.section5 {
     margin-top: 40px;
 
     .container {
