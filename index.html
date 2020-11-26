@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <title>Booking</title>
+</head>
+
+<body>
+    <!--Header-->
+    <header class="header">
+        <div class="container">
+            <a href="#" class="header-logo">
+                <img src="img/site-logo.svg" alt="" class="header-logo-img">
+            </a>
+
+            <div class="header-switch">
+                <i class="fas fa-bars icon icon-menu"></i>
+            </div>
+
+            <div class="header-menu">
+                <div class="header-menu-user">
+                    <a href="#">Register</a>
+                    <a href="#">Sign In</a>
+                </div>
+
+                <a href="#" class="button header-menu-property">List your property</a>
+
+                <div class="header-menu-helper">
+                    <select>
+                        <option value="">Tr</option>
+                        <option value="">En</option>
+                    </select>
+                    <select>
+                        <option value="">TRY</option>
+                        <option value="">EURO</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--End of Header-->
+
+    <!--Navigation-->
+    <nav class="navigation">
+        <div class="container">
+            <a href="#" class="navigation-link">Accommodation</a>
+            <a href="#" class="navigation-link">Flights</a>
+            <a href="#" class="navigation-link">Rental Cars</a>
+            <a href="#" class="navigation-link">Airport Taxis</a>
+        </div>
+    </nav>
+    <!--End of Navigation-->
+
+    <!--Main-->
+    <main class="main">
+        <section class="showCase">
+            <div class="container">
+                <h1 class="showCase-title">More deals than days in a year.</h1>
+                <h3 class="showCase-subtitle">From cosy country homes to funky city flats</h3>
+
+                <div class="search">
+                    <form class="search-form">
+                        <div class="search-form-item">
+                            <div class="form-item">
+                                <i class="fas fa-map-marker-alt icon"></i>
+                                <input type="text" class="text" placeholder="Berlin, Germany">
+                            </div>
+                            <p class="form-description">Destination, property name or address</p>
+                        </div>
+
+                        <div class="search-form-item">
+                            <div class="form-item">
+                                <i class="fas fa-calendar-alt icon"></i>
+                                <input class="text date-text" type="date">
+                            </div>
+                            <p class="form-description">When</p>
+                        </div>
+
+                        <div class="search-form-item">
+                            <div class="form-item">
+                                <i class="fas fa-user icon"></i>
+                                <select class="select">
+                                    <option value="" hidden>Guests</option>
+                                    <option value="">1 Person</option>
+                                    <option value="">2 Persons</option>
+                                </select>
+
+                            </div>
+                        </div>
+
+                        <div class="search-form-item">
+                            <div class="form-item">
+                                <button class="button" type="button">
+                                    Let's get started
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="for-work">
+                            <label class="form-checkbox">
+                                <i class="fas fa-exclamation-circle"></i>
+                                Are you travelling for work ?
+                                <div class="form-box">
+                                    <input type="checkbox">
+                                    <i class="fas fa-check icon"></i>
+                                </div>
+                            </label>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="showCase-shortlink">
+                    <a class="showCase-shortlink-link">Find deals</a>
+                    <a class="showCase-shortlink-link">Travel guides</a>
+                    <a class="showCase-shortlink-link item3">How was your stay</a>
+                    <a class="showCase-shortlink-link">Holiday rentals</a>
+                    <a class="showCase-shortlink-link">for Business</a>
+                </div>
+
+                <div class="showCase-store">
+                    <a href="https://apps.apple.com/de/app/booking-com-hotel-angebote/id367003839" target="_blank">
+                        <div class="showCase-store-item apple">
+                            <div class="icon-store apple-icon"><i class="fab fa-apple"></i></div>
+                            <div class="store-text">
+                                <p>Download on the</p>
+                                <h4>App Store</h4>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://play.google.com/store/apps/details?id=com.booking&hl=en_US&gl=US" target="_blank">
+                        <div class="showCase-store-item apple">
+                            <div class="icon-store apple-icon"><i class="fab fa-google-play"></i></div>
+                            <div class="store-text">
+                                <p>Get it on the</p>
+                                <h4>Google Play</h4>
+                            </div>
+                        </div>
+                    </a>
+
+
+                </div>
+            </div>
+        </section>
+
+        <section class="highlights">
+            <div class="container">
+                <div class="highlights-slider">
+                    <div class="highlights-item">
+                        <div class="highlights-item-show"
+                            style="background-image: url(https://images.unsplash.com/photo-1601909712659-5182280d09ab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=890&q=80);">
+                            <div class="content">
+                                <h3>Casablanca </h3>
+                                <h3>Top reasons to visit</h3>
+                                <div class="tag">
+                                    <a href="" class="tag-item">museums</a>
+                                    <a href="" class="tag-item">sightseeing</a>
+                                    <a href="" class="tag-item">culture</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="highlights-item-extra">
+                            <h4>Still planning a trip to Casablanca?</h4>
+                            <label>
+                                <input type="checkbox">
+                                <span>23 Oct - 24 Oct / 1 room, 2 adults</span>
+                            </label>
+                            <button type="button">View properties</button>
+                        </div>
+                    </div>
+
+                    <div class="highlights-item">
+                        <div class="highlights-item-show"
+                            style="background-image: url(https://images.unsplash.com/photo-1605259386010-d7003729af98?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=667&q=80);">
+                            <div class="content">
+                                <h3>Ankara</h3>
+                                <h3>Top reasons to visit</h3>
+                                <div class="tag">
+                                    <a href="" class="tag-item">museums</a>
+                                    <a href="" class="tag-item">sightseeing</a>
+                                    <a href="" class="tag-item">culture</a>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="highlights-item-extra">
+                            <h4>Still planning a trip to Ankara?</h4>
+                            <label>
+                                <input type="checkbox">
+                                <span>10 Nov - 11 Nov / 9 room, 5 adults</span>
+                            </label>
+                            <button type="button">View properties</button>
+                        </div>
+                    </div>
+                    <div class="highlights-item">
+                        <div class="highlights-item-show"
+                            style="background-image: url(https://images.unsplash.com/flagged/photo-1564395555740-f801ee068ffe?ixlib=rb-1.2.1&auto=format&fit=crop&w=889&q=80);">
+                            <div class="content">
+                                <h3>Nürnberg</h3>
+                                <h3>Top reasons to visit</h3>
+                                <div class="tag">
+                                    <a href="" class="tag-item">museums</a>
+                                    <a href="" class="tag-item">sightseeing</a>
+                                    <a href="" class="tag-item">culture</a>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="highlights-item-extra">
+                            <h4>Still planning a trip to Nürnberg?</h4>
+                            <label>
+                                <input type="checkbox">
+                                <span>23 Oct - 24 Oct / 1 room, 1 adults</span>
+                            </label>
+                            <button type="button">View properties</button>
+                        </div>
+                    </div>
+                    <div class="highlights-item">
+                        <div class="highlights-item-show"
+                            style="background-image: url(https://images.unsplash.com/photo-1529551739587-e242c564f727?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=890&q=80);">
+                            <div class="content">
+                                <h3>Barcelona</h3>
+                                <h3>Top reasons to visit</h3>
+                                <div class="tag">
+                                    <a href="" class="tag-item">museums</a>
+                                    <a href="" class="tag-item">sightseeing</a>
+                                    <a href="" class="tag-item">culture</a>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="highlights-item-extra">
+                            <h4>Still planning a trip to Barcelona?</h4>
+                            <label>
+                                <input type="checkbox">
+                                <span>06 May - 08 May / 1 room, 2 adults</span>
+                            </label>
+                            <button type="button">View properties</button>
+                        </div>
+                    </div>
+                    <div class="highlights-item">
+                        <div class="highlights-item-show"
+                            style="background-image: url(https://images.unsplash.com/photo-1561731172-9d906d7b13bf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80);">
+                            <div class="content">
+                                <h3>Tbilisi</h3>
+                                <h3>Top reasons to visit</h3>
+                                <div class="tag">
+                                    <a href="" class="tag-item">museums</a>
+                                    <a href="" class="tag-item">sightseeing</a>
+                                    <a href="" class="tag-item">culture</a>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="highlights-item-extra">
+                            <h4>Still planning a trip to Tbilisi?</h4>
+                            <label>
+                                <input type="checkbox">
+                                <span>12 Jun - 15 June / 2 room, 2 adults</span>
+                            </label>
+                            <button type="button">View properties</button>
+                        </div>
+                    </div>
+                    <div class="highlights-item">
+                        <div class="highlights-item-show"
+                            style="background-image: url(https://images.unsplash.com/photo-1565258827199-8584367e3fc1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=667&q=80);">
+                            <div class="content">
+                                <h3>Wroclaw</h3>
+                                <h3>Top reasons to visit</h3>
+                                <div class="tag">
+                                    <a href="" class="tag-item">museums</a>
+                                    <a href="" class="tag-item">sightseeing</a>
+                                    <a href="" class="tag-item">culture</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="highlights-item-extra">
+                            <h4>Still planning a trip to Wroclaw?</h4>
+                            <label>
+                                <input type="checkbox">
+                                <span>12 Jun - 15 June / 2 room, 2 adults</span>
+                            </label>
+                            <button type="button">View properties</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section1">
+            <div class="container">
+                <div class="section1-main">
+                    <div class="section1-item">
+                        <h4 class="section1-item-header">New deals listed daily for every budget</h4>
+                        <p class="section1-item-paragraph">No booking fees / Save money!
+                            <br><a href="" class="section1-item-link">We Price Match</a>
+                        </p>
+
+                    </div>
+                    <div class="section1-item">
+                        <h4 class="section1-item-header"><a href="" class="section1-item-span"> 1,490,411 </a>
+                            properties worldwide</h4>
+                        <p class="section1-item-paragraph">Including 829,668 holiday rentals in 121,734 destination in
+                            229 countries
+                            <a href="" class="section1-item-link">List your property</a>
+                        </p>
+
+                    </div>
+                    <div class="section1-item">
+                        <h4 class="section1-item-header">Make changes to your booking, anytime</h4>
+                        <p class="section1-item-paragraph">You can make changes, <a href=""
+                                class="section1-item-link">send a request or cancel</a> in just a few clicks</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section2">
+            <div class="container">
+                <div class="section2-main">
+                    <h2 class="section2-main-header">More destinations</h2>
+                    <div class="section2-main-destinations">
+                        <div class="section2-main-item">
+                            <div class="section2-main-item-img"
+                                style="background-image: url(https://images.unsplash.com/photo-1599044259127-dceef81b530e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=200&q=80);">
+                            </div>
+                            <div class="section2-main-item-content">
+                                <h4>Playa d'en Bossa</h4>
+                                <p> <i class="fas fa-map-marker-alt"></i> Spain <span class="top">TOP</span> </p>
+                                <p>
+                                    <a href="">24 Apartments</a>
+                                    <span>,</span>
+                                    <a href="">10 Aparthotels</a>
+                                    <span>,</span>
+                                    <a href="">2 villas</a>
+                                </p>
+                                <i class="fas fa-chevron-right right-arrow"></i>
+                            </div>
+                        </div>
+                        <div class="section2-main-item">
+                            <div class="section2-main-item-img"
+                                style="background-image: url(https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=200&q=80);">
+                            </div>
+                            <div class="section2-main-item-content">
+                                <h4>Santa Eularia des Riu</h4>
+                                <p> <i class="fas fa-map-marker-alt location-logo"></i> Spain <i
+                                        class="fas fa-plane plane-logo"></i> </p>
+                                <p>
+                                    <a href="">37 Villas</a>
+                                    <span>,</span>
+                                    <a href="">21 Apartments</a>
+                                    <span>,</span>
+                                    <a href="">26 Guest houses</a>
+                                    <span>,</span>
+                                    <a href="">5 Aparthotels</a>
+                                </p>
+                                <i class="fas fa-chevron-right right-arrow"></i>
+                            </div>
+                        </div>
+                        <div class="section2-main-item">
+                            <div class="section2-main-item-img"
+                                style="background-image: url(https://images.unsplash.com/photo-1551029666-ce67091248dd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=200&q=80);">
+                            </div>
+                            <div class="section2-main-item-content">
+                                <h4>Istanbul</h4>
+                                <p> <i class="fas fa-map-marker-alt location-logo"></i> Turkey <span
+                                        class="top">TOP</span> <i class="fas fa-plane plane-logo"></i> </p>
+                                <p>
+                                    <a href="">476 Apartments</a>
+                                    <span>,</span>
+                                    <a href="">56 Beds and breakfasts</a>
+                                    <span>,</span>
+                                    <a href="">54 hostels</a>
+                                </p>
+                                <i class="fas fa-chevron-right right-arrow"></i>
+                            </div>
+                        </div>
+                        <div class="section2-main-item">
+                            <div class="section2-main-item-img"
+                                style="background-image: url(https://images.unsplash.com/photo-1550656722-8099c82ab00c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=200&q=80);">
+                            </div>
+                            <div class="section2-main-item-content">
+                                <h4>Tromso</h4>
+                                <p> <i class="fas fa-map-marker-alt location-logo"></i> Norway <span
+                                        class="top">TOP</span> <i class="fas fa-plane plane-logo"></i> </p>
+                                <p>
+                                    <a href="">12 Apartments</a>
+                                    <span>,</span>
+                                    <a href="">5 Guest houses</a>
+                                    <span>,</span>
+                                    <a href="">33 hostels</a>
+                                </p>
+                                <i class="fas fa-chevron-right right-arrow"></i>
+                            </div>
+                        </div>
+                        <div class="section2-main-item">
+                            <div class="section2-main-item-img"
+                                style="background-image: url(https://images.unsplash.com/photo-1551029666-ce67091248dd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=200&q=80);">
+                            </div>
+                            <div class="section2-main-item-content">
+                                <h4>Athens</h4>
+                                <p> <i class="fas fa-map-marker-alt location-logo"></i> Greece <span
+                                        class="top">TOP</span> <i class="fas fa-plane plane-logo"></i> </p>
+                                <p>
+                                    <a href="">357 Apartments</a>
+                                    <span>,</span>
+                                    <a href="">56 Bed and breakfasts</a>
+                                    <span>,</span>
+                                    <a href="">82 hostels</a>
+                                </p>
+                                <i class="fas fa-chevron-right right-arrow"></i>
+                            </div>
+                        </div>
+                        <a href="" class="section2-main-item">
+                            Show me all destinations
+                            <i class="fas fa-chevron-right right-arrow-link"></i>
+                        </a>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+
+        <section class="section3">
+            <div class="container">
+                <div class="section3-main">
+                    <div class="section3-main-item">
+                        <div class="section3-main-item-img">
+                            <i class="far fa-comment"></i>
+                        </div>
+                        <div class="section3-main-item-content">
+                            <h2 class="section3-main-item-content-title">131,130,000 </h2>
+                            <h2 class="section3-main-item-content-subtitle">reviews</h2>
+                            <p class="section3-main-item-content-paragraph">Real guest. Real stays. Real opinions to
+                                help you make the right choice.</p>
+                        </div>
+                    </div>
+                    <div class="section3-main-item">
+                        <div class="section3-main-item-img">
+                            <i class="far fa-life-ring"></i>
+                        </div>
+                        <div class="section3-main-item-content">
+                            <h2 class="section3-main-item-content-subtitle">We're here to help</h2>
+                            <h2 class="section3-main-item-content-title">24/7</h2>
+                            <p class="section3-main-item-content-paragraph">Find answers, manage your booking and more
+                                in our
+                                <a href="#" class="help-centre">Help Centre</a>.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section4">
+            <div class="container">
+                <h2 class="section4-header">Discover</h2>
+                <div class="section4-main">
+                    <div class="section4-main-box">
+                        <div class="section4-main-item"
+                            style="background-image: url(https://images.unsplash.com/photo-1471306224500-6d0d218be372?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=80);">
+                            <div class="section4-main-item-price">
+                                <span class="price-para">Average Price</span>
+                                <br>
+                                <span class="price-value">€&nbsp;79,65</span>
+                            </div>
+                            <div class="section4-main-item-content">
+                                <h3 class="section4-main-item-content-header">United States</h3>
+                                <p class="section4-main-item-content-paragraph">Enjoy relaxation, shopping and
+                                    restaurants during your next trip to USA!</p>
+                            </div>
+                        </div>
+                        <div class="section4-main-item"
+                            style="background-image: url(https://images.unsplash.com/photo-1514890547357-a9ee288728e0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=80);">
+                            <div class="section4-main-item-price">
+                                <span class="price-para">Average Price</span>
+                                <br>
+                                <span class="price-value">€&nbsp;37,78</span>
+                            </div>
+                            <div class="section4-main-item-content">
+                                <h3 class="section4-main-item-content-header">Italy</h3>
+                                <p class="section4-main-item-content-paragraph">Enjoy food, scenery, and relaxation
+                                    during your next trip to Italy!</p>
+                            </div>
+                        </div>
+                        <div class="section4-main-item"
+                            style="background-image: url(https://images.unsplash.com/photo-1471623432079-b009d30b6729?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80);">
+                            <div class="section4-main-item-price">
+                                <span class="price-para">Average Price</span>
+                                <br>
+                                <span class="price-value">€&nbsp;55,93</span>
+                            </div>
+                            <div class="section4-main-item-content">
+                                <h3 class="section4-main-item-content-header">France</h3>
+                                <p class="section4-main-item-content-paragraph">Put tranquility, scenery and old town on
+                                    your to-do list during your next visit to France!</p>
+                            </div>
+                        </div>
+                        <div class="section4-main-item"
+                            style="background-image: url(https://images.unsplash.com/photo-1513073945753-eb763d2a99de?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=80);">
+                            <div class="section4-main-item-price">
+                                <span class="price-para">Average Price</span>
+                                <br>
+                                <span class="price-value">€&nbsp;30,42</span>
+                            </div>
+                            <div class="section4-main-item-content">
+                                <h3 class="section4-main-item-content-header">Turkey</h3>
+                                <p class="section4-main-item-content-paragraph">Enjoy sun and see, eat delicious foods, meet generous people during your next visit to France!</p>
+                            </div>
+                        </div>
+                        <div class="section4-main-item"
+                            style="background-image: url(https://images.unsplash.com/photo-1569498283068-140e58143192?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=80);">
+                            <div class="section4-main-item-price">
+                                <span class="price-para">Average Price</span>
+                                <br>
+                                <span class="price-value">€&nbsp;21,40</span>
+                            </div>
+                            <div class="section4-main-item-content">
+                                <h3 class="section4-main-item-content-header">Georgia</h3>
+                                <p class="section4-main-item-content-paragraph">Enjoy winter and mountains, try wines during your next visit to Georgia!</p>
+                            </div>
+                        </div>
+                        <div class="section4-main-item"
+                            style="background-image: url(https://images.unsplash.com/photo-1559956144-ee11501d5459?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=80);">
+                            <div class="section4-main-item-price">
+                                <span class="price-para">Average Price</span>
+                                <br>
+                                <span class="price-value">€&nbsp;70,11</span>
+                            </div>
+                            <div class="section4-main-item-content">
+                                <h3 class="section4-main-item-content-header">Bahamas</h3>
+                                <p class="section4-main-item-content-paragraph">Dive to the ocean and enjoy beaches during your next visit to Georgia!</p>
+                            </div>
+                        </div>
+                        <div class="section4-main-item"
+                            style="background-image: url(https://images.unsplash.com/photo-1514813621023-7a1e3fca8c1b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=80);">
+                            <div class="section4-main-item-price">
+                                <span class="price-para">Average Price</span>
+                                <br>
+                                <span class="price-value">€&nbsp;38,10</span>
+                            </div>
+                            <div class="section4-main-item-content">
+                                <h3 class="section4-main-item-content-header">Russia</h3>
+                                <p class="section4-main-item-content-paragraph">Enjoy nightlife and explore traditional meals during your next visit to Georgia!</p>
+                            </div>
+                        </div>
+                        <div class="section4-main-item"
+                            style="background-image: url(https://images.unsplash.com/photo-1519406155028-39dbcdf8400c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=80);">
+                            <div class="section4-main-item-price">
+                                <span class="price-para">Average Price</span>
+                                <br>
+                                <span class="price-value">€&nbsp;41,79</span>
+                            </div>
+                            <div class="section4-main-item-content">
+                                <h3 class="section4-main-item-content-header">Australia</h3>
+                                <p class="section4-main-item-content-paragraph">Explore tropical lives, drive the ocean road during your next visit to Australia!</p>
+                            </div>
+                        </div>
+                        <div class="section4-main-item" style="background-color: #01acee;">
+                            <a href="#" class="more-link">
+                                <div class="section4-main-item-content">
+                                    <h3 class="section4-main-item-content-more">More <i class="fas fa-chevron-right more-icon"></i></h3> 
+                                    <p class="section4-main-item-content-paragraph"></p>
+                                </div>
+                            </a>
+                        </div> 
+                               
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section7">
+            <div class="container">
+                <div class="section7-main">
+                    <h2 class="section7-main-header">Destinations we love</h2>
+                    <div class="section7-main-list">
+                        <ul class="list-tab">
+                            <li class="list-tab-btn active">Regions</li>
+                            <li class="list-tab-btn">Cities</li>
+                            <li class="list-tab-btn">Place of interest</li>
+                        </ul>
+                        <ul class="list-body">
+                            <li class="list-body-item">
+                                <a href="" class="list-body-link">Bali</a>
+                                <span class="review-num">12,874 properties</span>
+                            </li>
+                            <li class="list-body-item">
+                                <a href="" class="list-body-link">Lake District</a>
+                                <span class="review-num">2,400 properties</span>
+                            </li>
+                            <li class="list-body-item">
+                                <a href="" class="list-body-link">England</a>
+                                <span class="review-num">74,622 properties</span>
+                            </li>
+                            <li class="list-body-item">
+                                <a href="" class="list-body-link">Zanzibar</a>
+                                <span class="review-num">692 properties</span>
+                            </li>
+                            <li class="list-body-item">
+                                <a href="" class="list-body-link">Cornwall</a>
+                                <span class="review-num">105 properties</span>
+                            </li>
+                            <li class="list-body-item">
+                                <a href="" class="list-body-link">Jersey</a>
+                                <span class="review-num">89 properties</span>
+                            </li>
+                            <li class="list-body-item">
+                                <a href="" class="list-body-link">Phuket</a>
+                                <span class="review-num">537 properties</span>
+                            </li>
+                            <li class="list-body-item">
+                                <a href="" class="list-body-link">Texel</a>
+                                <span class="review-num">413 properties</span>
+                            </li>
+                            <li class="list-body-item">
+                                <a href="" class="list-body-link">Bihar</a>
+                                <span class="review-num">761 properties</span>
+                            </li>
+                            <li class="list-body-item">
+                                <a href="" class="list-body-link">Bora Bora</a>
+                                <span class="review-num">62 properties</span>
+                            </li>
+
+                        </ul>
+                        <ul class="list-body" style="display: none;">
+                            <li class="list-body-item">
+                                <a href="" class="list-body-link">Edinburg</a>
+                                <span class="review-num">4,278 reviews</span>
+                            </li>
+                            <li class="list-body-item">
+                                <a href="" class="list-body-link">Barcelona</a>
+                                <span class="review-num">938,308 reviews</span>
+                            </li>
+                            <li class="list-body-item">
+                                <a href="" class="list-body-link">Sydney</a>
+                                <span class="review-num">4,278 reviews</span>
+                            </li>
+                            <li class="list-body-item">
+                                <a href="" class="list-body-link">Barcelona</a>
+                                <span class="review-num">4,278 reviews</span>
+                            </li>
+                            <li class="list-body-item">
+                                <a href="" class="list-body-link">Rome</a>
+                                <span class="review-num">4,278 reviews</span>
+                            </li>
+                            <li class="list-body-item">
+                                <a href="" class="list-body-link">Londra</a>
+                                <span class="review-num">4,278 reviews</span>
+                            </li>
+                            <li class="list-body-item">
+                                <a href="" class="list-body-link">Istanbul</a>
+                                <span class="review-num">4,278 reviews</span>
+                            </li>
+                            <li class="list-body-item">
+                                <a href="" class="list-body-link">Bali</a>
+                                <span class="review-num">4,278 reviews</span>
+                            </li>
+                            <li class="list-body-item">
+                                <a href="" class="list-body-link">Bodrum</a>
+                                <span class="review-num">4,278 reviews</span>
+                            </li>
+                            <li class="list-body-item">
+                                <a href="" class="list-body-link">Antalya</a>
+                                <span class="review-num">4,278 reviews</span>
+                            </li>
+                            <li class="list-body-item">
+                                <a href="" class="list-body-link">Moskow</a>
+                                <span class="review-num">4,278 reviews</span>
+                            </li>
+                            <li class="list-body-item">
+                                <a href="" class="list-body-link">St. Petersburg</a>
+                                <span class="review-num">4,278 reviews</span>
+                            </li>
+                            <li class="list-body-item">
+                                <a href="" class="list-body-link">Malmö</a>
+                                <span class="review-num">4,278 reviews</span>
+                            </li>
+                            <li class="list-body-item">
+                                <a href="" class="list-body-link">Helsinki</a>
+                                <span class="review-num">4,278 reviews</span>
+                            </li>
+                            <li class="list-body-item">
+                                <a href="" class="list-body-link">Rabat</a>
+                                <span class="review-num">4,278 reviews</span>
+                            </li>
+                        </ul>
+
+                        <ul class="list-body" style="display: none;">
+                            <li class="list-body-item">
+                                <a href="" class="list-body-link">State Park</a>
+                                <span class="review-num">62 properties</span>
+                            </li>
+                            <li class="list-body-item">
+                                <a href="" class="list-body-link">Disneyland</a>
+                                <span class="review-num">5,721 properties</span>
+                            </li>
+                            <li class="list-body-item">
+                                <a href="" class="list-body-link">The Shard</a>
+                                <span class="review-num">12,313 properties</span>
+                            </li>
+                            <li class="list-body-item">
+                                <a href="" class="list-body-link">Burj Al Arab Tower</a>
+                                <span class="review-num">3,537 properties</span>
+                            </li>
+                            <li class="list-body-item">
+                                <a href="" class="list-body-link">Times Square</a>
+                                <span class="review-num">1,958 properties</span>
+                            </li>
+                            <li class="list-body-item">
+                                <a href="" class="list-body-link">Eiffel Tower</a>
+                                <span class="review-num">8,418 properties</span>
+                            </li>
+                            <li class="list-body-item">
+                                <a href="" class="list-body-link">Schwarzwald</a>
+                                <span class="review-num">4,270 properties</span>
+                            </li>
+                            <li class="list-body-item">
+                                <a href="" class="list-body-link">Ost</a>
+                                <span class="review-num">4,278 properties</span>
+                            </li>
+                            <li class="list-body-item">
+                                <a href="" class="list-body-link">Alexanderplatz</a>
+                                <span class="review-num">2,198 properties</span>
+                            </li>
+                            <li class="list-body-item">
+                                <a href="" class="list-body-link">Niagara Falls State Park</a>
+                                <span class="review-num">122 properties</span>
+                            </li>
+                            <li class="list-body-item">
+                                <a href="" class="list-body-link">Blue Mosque</a>
+                                <span class="review-num">2,859 properties</span>
+                            </li>
+                            <li class="list-body-item">
+                                <a href="" class="list-body-link">Taksim Square</a>
+                                <span class="review-num">4,663 properties</span>
+                            </li>
+                            <li class="list-body-item">
+                                <a href="" class="list-body-link">Narikala Fortress</a>
+                                <span class="review-num">1,607 properties</span>
+                            </li>
+                            <li class="list-body-item">
+                                <a href="" class="list-body-link">Neuschwanstein</a>
+                                <span class="review-num">419 properties</span>
+                            </li>
+                            <li class="list-body-item">
+                                <a href="" class="list-body-link">Bosphorus</a>
+                                <span class="review-num">3,692 properties</span>
+                            </li>
+                        </ul>
+
+
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!--Main-->
+
+    <!--Footer-->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <h2 class="footer-content-banner">Save time, save money!</h2>
+                <h4 class="footer-content-subbanner">Sign up and we'll send the best deals to you</h4>
+                <form class="footer-content-form">
+                    <input type="email" placeholder="Your email" class="form-email" required>
+                    <button type="submit" class="button">Subscribe</button>
+                    <label>
+                        <div>
+                            <input type="checkbox">
+                            <span>Send me a link to the FREE Booking.com app!</span>
+                        </div>
+                    </label>
+                </form>
+            </div>
+        </div>
+    </footer>
+    <!--End of Footer-->
+
+    <script src="js/flickity.pkgd.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,153 @@
+.header {
+    border-bottom: 1px solid #ddd;
+    height: 68px;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        position: relative;
+        overflow: visible;
+    }
+
+    &-logo-img {
+        width: 144px;
+    }
+
+    &-switch {
+        width: $finger-size;
+        height: $finger-size;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        position: relative;
+        margin-right: -10px;
+
+        .icon {
+            font-size: 18px;
+        }
+
+        @include mq ("tablet") {
+            display: none;
+        }
+    }
+
+    &-menu {
+        opacity: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        padding-bottom: 20px;
+        background-color: #fff;
+        box-shadow: 0 20px 30px rgba(black, .2);
+        transition: .5s;
+        z-index: 5;
+
+        .header.menu-show & {
+            top: 100%;
+            opacity: 1;
+            z-index: 5;
+            background-color: #fff;
+        }
+
+        @include mq ("tablet") {
+            opacity: 1;
+            flex-direction: row;
+            position: static;
+            box-shadow: none;
+            background: transparent;
+            padding-bottom: 0;
+            transition: 0s;
+        }
+
+        &-user {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 80%;
+
+
+
+
+            @include mq ("tablet") {
+                flex-direction: row;
+                margin-right: 5px;
+            }
+
+            a {
+                width: 100%;
+                justify-content: center;
+                display: inline-flex;
+                align-items: center;
+                height: $finger-size;
+
+
+
+                @include mq ("tablet") {
+                    flex-direction: row;
+                    width: 50px;
+                    padding-right: 15px;
+                    padding-left: 15px;
+                }
+
+                &:hover {
+                    background-color: #ddd;
+                }
+            }
+        }
+
+        &-property {
+            justify-content: center;
+            width: 80%;
+            padding-left: 0;
+            padding-right: 0;
+
+            @include mq ("tablet") {
+                
+                padding-left: $gutter;
+                padding-right: $gutter;
+            }
+
+        }
+
+        &-helper {
+            display: flex;
+            margin-top: 10px;
+
+            @include mq ("tablet") {
+                margin-left: 20px;
+                margin-top: 0;
+            }
+
+            select {
+                height: $finger-size;
+                background: transparent;
+                padding-left: 10px;
+                padding-right: 10px;
+                border: none;
+                text-align-last: center;
+                outline: none;
+                appearance: none;
+                border: 1px solid #e0e6f1;
+                color: $color-navy;
+
+                &:nth-child(1) {
+                    border-top-left-radius: $border-radius;
+                    border-bottom-left-radius: $border-radius;
+                    border-right: 0;
+                }
+
+                &:nth-child(2) {
+                    border-top-right-radius: $border-radius;
+                    border-bottom-right-radius: $border-radius;
+                }
+            }
+        }
+    }
+}

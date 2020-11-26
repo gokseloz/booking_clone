@@ -1,0 +1,1084 @@
+.showCase {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: #fff;
+    background-color: $color-navy;
+    text-align: center;
+
+    @include mq ("tablet") {
+        padding-top: 130px;
+        padding-bottom: 170px;
+    }
+
+    .container {
+        background-color: $color-navy;
+        text-align: center;
+
+        @include mq ("tablet") {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    .showCase-title {
+        @include mq ("tablet") {
+            font-size: 3.2em;
+        }
+    }
+
+    .showCase-subtitle {
+        margin-top: 10px;
+        font-size: .8em;
+
+        @include mq ("tablet") {
+            font-size: 1em;
+            font-weight: 400;
+            margin-top: 20px;
+        }
+    }
+
+    &-shortlink {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5px;
+
+        @include mq ("tablet") {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 70px;
+        }
+
+        &-link {
+            width: 50%;
+            height: $finger-size;
+            color: inherit;
+            font-size: $font-size-small;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0.7;
+            cursor: pointer;
+            
+            
+
+            @include mq ("tablet") {
+                width: auto;
+                height: $finger-size;
+                color: inherit;
+                margin-left: 15px;
+                margin-right: 15px;
+                font-size: $font-size-small;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                opacity: 0.7;
+
+                &:hover {
+                    text-decoration: underline;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    &-store {
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @include mq ("tablet") {
+            margin-top: 70px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &-item {
+            color: #fff;
+            display: flex;
+            align-items: center;
+            background-color: darken($color-navy, 8%);
+            padding: 6px 12px;
+            border-radius: 5px;
+            margin-left: 2px;
+            margin-right: 2px;
+            transition: background-color .2s;
+
+            &:hover {
+                background-color: darken($color-navy, 15%);
+            }
+
+            @include mq ("tablet") {
+                color: #fff;
+                display: flex;
+                align-items: center;
+                background-color: darken($color-navy, 10%);
+                padding: 8px 15px;
+                border-radius: $border-radius*2;
+                margin-left: 5px;
+                margin-right: 5px;
+            }
+
+            .icon-store {
+                padding-right: 10px;
+
+                i {
+                    font-size: 25px;
+
+                    @include mq ("tablet") {
+                        font-size: 30px;
+                    }
+                }
+
+                .fa-google-play {
+                    color: #3BCCFF;
+                }
+            }
+
+            .store-text {
+                text-align: left;
+            }
+
+            p {
+                font-size: 8px;
+
+                @include mq ("tablet") {
+                    font-size: 11px;
+                }
+            }
+
+            h4 {
+                font-size: 13px;
+
+                @include mq ("tablet") {
+                    font-size: $font-size;
+                }
+            }
+        }
+    }
+}
+
+.search {
+    text-align: left;
+    margin-top: 30px;
+    background-color: $color-yellow;
+    padding: $gutter;
+    box-shadow: 0px 20px 40px rgba(black, .2);
+
+    @include mq ("tablet") {
+        padding: 50px 50px;
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+    }
+
+    &-form {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+
+        @include mq ("tablet") {
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: center;
+        }
+
+        &-item {
+            width: auto;
+
+            @include mq ("tablet") {}
+
+            &+& {
+                margin-top: 20px;
+
+                @include mq ("tablet") {
+                    margin-top: 0;
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+}
+
+.for-work {
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    .form-checkbox {
+        display: flex;
+        align-items: center;
+    }
+
+    .fa-exclamation-circle {
+        margin-right: 5px;
+        opacity: 0.5;
+    }
+
+    @include mq ("tablet") {
+        font-size: 13px;
+        position: absolute;
+        top: calc(#{$finger-size} + 8px);
+        right: 0;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        width: auto;
+        display: block;
+    }
+}
+
+.highlights {
+    margin-top: 5px;
+    
+    @include mq ("tablet") {
+        margin-top: -100px;
+    }
+
+    .container {
+        background: transparent;
+        padding-left: 10px;
+        padding-right: 10px;
+        height: 210px;
+        
+
+        @include mq ("tablet") {
+            background: transparent;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-bottom: 20px;
+        }
+    }
+
+    &-slider {
+        .flickity-viewport {
+            overflow: visible;
+        }
+    }
+
+    &-item {
+        width: 300px;
+        height: auto;
+        margin-right: 30px;
+        
+        @include mq ("tablet") {
+            width: 300px;
+            height: 200px;
+            margin-right: 30px;
+            box-shadow: 0px 10px 15px rgba(black, .5);
+        }
+
+        &.is-expanded {
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            
+            @include mq ("tablet") {
+                width: 630px;
+                display: flex;
+                flex-direction: row;
+            }
+
+            .highlights-item-show {
+                width: 100%;
+                
+                
+                @include mq ("tablet") {
+                    width: 45%;
+                }
+            }
+
+            .highlights-item-extra {
+                width: 100%;
+                background-color: #fff;
+                z-index: 1;
+                display: flex;
+                flex-direction: column;
+                
+                @include mq ("tablet") {
+                    width: 55%;
+                }
+            }
+        }
+
+        &-show {
+            width: 100%;
+            height: 100%;
+            background: no-repeat center center / cover;
+            display: flex;
+            align-items: flex-end;
+            padding: 20px 10px;
+            box-sizing: border-box;
+            color: #fff;
+
+            &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(to bottom, rgba(63, 76, 107, 0.5) 0%, rgba(63, 76, 107, 0.5) 100%);
+            }
+
+            .content {
+                position: relative;
+                z-index: 1;
+
+                h3 {
+                    font-size: 14px;
+                    margin-bottom: 3px;
+
+                    @include mq ("tablet") {
+                        font-size: $font-size;
+                        margin-bottom: 0px;
+                    }
+                }
+
+                .tag {
+                    &-item {
+                        font-size: 12px;
+                        margin-right: 7px;
+                        display: inline-block;
+                        margin-top: 7px;
+
+                        @include mq ("tablet") {
+                            font-size: 13px;
+                        }
+
+                        &:hover {
+                            text-decoration: underline
+                        }
+                    }
+                }
+            }
+        }
+
+        &-extra {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            justify-content: center;
+            display: none;
+
+            @include mq ("tablet") {
+                padding: 30px 30px;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: center;
+                display: none;
+            }
+
+            h4 {
+                cursor: auto;
+                color: $color-navy;
+                font-size: 14px;
+
+                @include mq ("tablet") {
+                    font-size: 16px;
+                }
+            }
+
+            label {
+                font-size: 12px;
+                margin-top: 5px;
+
+                @include mq ("tablet") {
+                    font-size: 15px;
+                    margin-top: 0px;
+                }
+            }
+
+            button {
+                cursor: pointer;
+                outline: none;
+                border: none;
+                width: 100%;
+                height: $finger-size;
+                background-color: $color-blue;
+                color: #fff;
+                font-family: inherit;
+                font-size: 12px;
+                justify-content: center;
+                align-items: flex-start;
+                margin-top: 10px;
+
+                @include mq ("tablet") {
+                    width: 120px;
+                }
+            }
+        }
+    }
+}
+
+.section1 {
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    
+
+
+    @include mq ("tablet") {
+        border-top: none;
+        border-bottom: none;
+        margin-top: 0px;
+    }
+
+    &-main {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+
+        @include mq ("tablet") {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            padding: 0px 100px;
+        }
+    }
+
+    &-item {
+        transition: box-shadow .3s;
+        text-align: center;
+
+        &:not(:nth-child(1)){  //select all childs besides FIRST child
+            margin-top: 20px;
+        }
+       
+
+        @include mq ("tablet") {
+            width: 250px;
+            text-align: left;
+            padding: 30px;
+            margin-bottom: 50px;
+            margin-top: 50px;
+            transition: box-shadow .3s;
+            
+           
+        }
+
+        &:hover {
+            box-shadow: 5px 5px 30px rgba(#ddd, .2), -5px -5px 30px rgba(#ddd, .2)
+        }
+
+        h4 {
+            margin-bottom: 5px;
+            color: $color-navy;
+            font-size: 14px;
+
+            @include mq ("tablet") {
+                margin-bottom: 10px;
+                font-size: $font-size
+            }
+        }
+
+        p {
+            font-size: 13px;
+        }
+
+        a {
+            text-decoration: underline;
+            color: $color-blue;
+            font-size: 13px;
+            display: inline-block;
+            margin-top: 3px;
+        }
+
+        &-span {
+            color: $color-blue;
+            text-decoration: underline;
+
+            &:nth-child(1) {
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.section2 {
+    margin-top: 30px;
+
+    @include mq ("tablet") {
+        margin-top: 0px
+    }
+
+    .container {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    &-main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        &-header {
+            padding-bottom: 20px;
+            color: $color-navy;
+            font-size: 20px;
+
+            @include mq ("tablet") {
+                margin-bottom: 20px;
+                font-size: 24px;
+            }
+        }
+
+        &-destinations {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            row-gap: 20px;
+
+            @include mq ("tablet") {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                row-gap: 40px;
+            }
+        }
+
+        &-item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            @include mq ("tablet") {
+                width: 33.33334%;
+            }
+
+            &:nth-child(4) {
+                display: none;
+
+                @include mq ("tablet") {
+                    display: flex;
+                }
+            }
+
+            &:nth-child(5) {
+                display: none;
+
+                @include mq ("tablet") {
+                    display: flex;
+                }
+            }
+
+            &:nth-child(6) {
+                background-color: $color-blue;
+                color: #fff;
+                position: relative;
+                transition: all .2s linear;
+                height: $finger-size;
+                margin-top: -10px;
+                font-size: 12px;
+
+                &:hover {
+                    background-color: rgba(30, 87, 153, 1);
+                }
+
+                @include mq ("tablet") {
+                    background-color: $color-blue;
+                    color: #fff;
+                    position: relative;
+                    padding-top: 0px;
+                    padding-bottom: 0px;
+                    margin-top: 0px;
+                    font-size: $font-size;
+                    height: auto;
+                }
+
+                .right-arrow-link {
+                    display: none;
+
+                    @include mq ("tablet") {
+                        margin-left: 50px;
+                        z-index: 3;
+                        display: block;
+
+                    }
+                }
+            }
+
+            &-img {
+                background: no-repeat center center / cover;
+                height: 100px;
+                width: 30%;
+
+                @include mq ("tablet") {
+                    background: no-repeat center center / cover;
+                    height: 100px;
+                    width: 30%;
+
+                }
+            }
+
+            &-content {
+                width: 70%;
+                padding-left: 5px;
+                padding-right: 0px;
+                box-sizing: border-box;
+                position: relative;
+                text-align: center;
+
+                @include mq ("tablet") {
+
+                    padding-left: $gutter;
+                    padding-right: $gutter;
+                    box-sizing: border-box;
+                    position: relative;
+                    text-align: left;
+                }
+
+                .right-arrow {
+                    display: none;
+                    cursor: pointer;
+
+                    @include mq ("tablet") {
+                        display: inline-block;
+                        color: #bbb;
+                        position: absolute;
+                        top: 15%;
+                        right: 10%;
+                    }
+                }
+
+                h4 {
+                    color: $color-navy;
+                    font-size: 14px;
+
+                    @include mq ("tablet") {
+                        color: $color-navy;
+                        font-size: $font-size;
+                    }
+                }
+
+                p {
+                    font-size: 12px;
+                    color: #bbb;
+                    font-weight: bold;
+                    margin-top: 10px;
+
+                    @include mq ("tablet") {
+                        font-size: 13px;
+                        margin-top: 5px;
+                    }
+
+                    .location-logo {
+                        margin-right: 3px;
+
+                    }
+
+                    .plane-logo {
+                        color: #fff;
+                        background-color: $color-blue;
+                        padding: 5px;
+                        margin-left: 3px;
+                    }
+
+                    .top {
+                        background-color: $color-yellow;
+                        color: #fff;
+                        padding: 3px 8px;
+                        margin-left: 5px;
+                        font-size: 12px;
+                    }
+                }
+
+                a {
+                    display: inline;
+                    font-size: 13px;
+                    text-decoration: underline;
+                    margin-top: 15px;
+                    color: #bbb;
+                    font-weight: bold;
+
+                    &:hover {
+                        color: $color-yellow;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.section3 {
+    margin-top: 30px;
+
+    @include mq ("tablet") {
+        margin-top: 100px;
+    }
+
+    &-main {
+        display: flex;
+        justify-content: center;
+
+        &-item {
+            padding-left: 0px;
+            padding-right: 5px;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+
+            @include mq ("tablet") {
+                padding-left: 100px;
+                padding-right: 150px;
+                flex-direction: row;
+                text-align: left;
+            }
+
+            &-img {
+                font-size: 40px;
+                margin-bottom: 10px;
+
+                @include mq ("tablet") {
+                    font-size: 50px;
+                    margin-right: 30px;
+                    margin-bottom: 0px;
+                }
+            }
+
+            &-content {
+                &-title {
+                    color: $color-blue;
+                    font-size: 18px;
+
+                    @include mq ("tablet") {
+                        font-size: 24px;
+                    }
+                }
+
+                &-subtitle {
+                    font-size: 16px;
+
+                    @include mq ("tablet") {
+                        font-size: 24px;
+                    }
+                }
+
+                &-paragraph {
+                    margin-top: 10px;
+                    font-size: 12px;
+
+                    @include mq ("tablet") {
+                        font-size: 16px;
+                    }
+
+                    .help-centre {
+                        color: $color-blue;
+                        text-decoration: underline;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.section4 {
+    margin-top: 50px;
+
+    @include mq ("tablet"){
+        margin-top: 100px;
+    }
+
+    &-header{
+        text-align: center;
+        margin-bottom: 20px;
+        color: $color-navy;
+        font-size: 20px;
+
+        @include mq ("tablet"){
+            margin-bottom: 50px;
+            color: $color-navy;
+            font-size: 24px;
+        }
+    }
+    
+    &-main {
+        .flickity-page-dots{
+            bottom: 10px;
+        }
+
+        .flickity-button{
+           top: 120px;
+        }
+
+        &-item {
+            width: 250px;
+            height: 250px;
+            background: no-repeat center center;
+            background-size: cover;
+            position: relative;
+            display: flex;
+            align-items: flex-end;
+            box-shadow: 0px 10px 15px rgba(black, .5);
+            margin-bottom: 50px;
+
+            @include mq ("tablet") {
+                width: 250px;
+                height: 250px;
+            }
+
+            &+& {                       //select this(section4-main-item) coming after by this(section4-main-item)
+                margin-left: 20px;
+
+                @include mq ("tablet") {
+                    margin-left: 20px;
+                }
+            }
+
+            &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(rgba(0 ,0 ,0, 0.3), rgba(0 ,0, 0, 0.3));
+
+            }
+
+            &-price {
+                position: absolute;
+                right: 10px;
+                top: 10px;
+                color: #fff;
+                background-color: $color-blue;
+                text-align: right;
+                font-size: 12px;
+                padding: 5px;
+                box-shadow: 0px 0px 30px rgba(255, 255, 255, 0.8);
+
+
+                @include mq ("tablet") {
+                    position: absolute;
+                    right: 10px;
+                    top: 10px;
+                    color: #fff;
+                    background-color: $color-blue;
+                    text-align: right;
+                    font-size: 12px;
+                    padding: 5px;
+                    box-shadow: 0px 0px 30px rgba(255, 255, 255, 0.8);
+                }
+
+            }
+
+            &:nth-last-child() {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .more-link {
+                width: 100%;
+                height: 100%;
+                z-index: 5;
+                transition: all .2s linear;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                &:hover {
+                    background-color: rgba(30, 87, 153, 1);
+                }
+            }
+
+            &-content {
+                color: #fff;
+                padding: 10px;
+                text-align: left;
+                z-index: 10;
+                
+
+                @include mq ("tablet") {
+                    color: #fff;
+                    padding: 20px;
+                    text-align: left;
+                    z-index: 10;
+                }
+
+
+                &-more {
+                    font-size: 32px;
+
+                    .more-icon {
+                        font-size: 24px;
+                        margin-left: 18px;
+                    }
+                }
+                
+                &-header{
+                    font-size: 16px;
+
+                    @include mq ("tablet") {
+                        font-size: 18px;
+                    }
+                }
+                &-paragraph {
+                    font-size: 12px;
+                    margin-top: 10px;
+
+                    @include mq ("tablet") {
+                        font-size: 14px;
+                    }
+                    
+                }
+            }
+        }
+    }
+}
+
+
+.section7 {
+    margin-top: 40px;
+
+    .container {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    @include mq ("tablet") {
+        margin-top: 70px;
+    }
+
+    &-main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: $max-width;
+
+        &-header {
+            width: 100%;
+            text-align: center;
+            color: $color-navy;
+            font-size: 20px;
+
+            @include mq ("tablet") {
+                width: 100%;
+                text-align: center;
+                color: $color-navy;
+                font-size: 24px;
+            }
+        }
+
+        &-list {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+
+            .list-tab {
+                display: flex;
+                flex-direction: row;
+                margin-top: 20px;
+                justify-content: center;
+                border-bottom: 1px solid $color-navy;
+
+                @include mq ("tablet") {
+                    margin-top: 30px;
+                }
+
+                &-btn {
+                    padding: 5px 10px;
+                    font-size: 13px;
+                    cursor: pointer;
+
+                    @include mq ("tablet") {
+                        padding: 10px 20px;
+                        font-size: 14px;
+                        cursor: pointer;
+                    }
+                }
+
+                &-btn.active {
+                    cursor: default;
+                    background-color: $color-navy;
+                    color: #fff;
+                }
+            }
+
+            .list-body {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                row-gap: 30px;
+                flex-wrap: wrap;
+                margin-top: 20px;
+                padding-top: 20px;
+                padding-bottom: 20px;
+
+                @include mq ("tablet") {
+                    row-gap: 20px;
+                    padding-top: 0px;
+                    padding-bottom: 0px;
+                }
+
+                &-item {
+                    width: 33.33334%;
+                    height: $finger-size;
+                    box-sizing: border-box;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    line-height: 18px;
+                    font-size: 13px;
+
+                    @include mq ("tablet") {
+                        width: 20%;
+                        height: $finger-size*1.5;
+                        box-sizing: border-box;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: flex-start;
+                        line-height: 24px;
+                        font-size: 16px;
+                    }
+                }
+
+                &-link {
+                    color: $color-navy;
+                    font-weight: bold;
+                    text-align: center;
+
+                    @include mq ("tablet") {
+                        width: 100%;
+                        text-align: left;
+                    }
+
+                    &:hover {
+                        color: #bc5b01;
+                    }
+                }
+
+                .review-num {
+                    display: block;
+                    opacity: .5;
+                    text-align: center;
+
+                    @include mq ("tablet") {
+                        display: block;
+                        opacity: .5;
+                        text-align: left;
+                    }
+                }
+            }
+        }
+    }
+}
