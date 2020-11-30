@@ -396,6 +396,7 @@ https://flickity.metafizzy.co
   .footer .container {
     background-color: #083b87;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center; }
   .footer-content {
@@ -476,7 +477,9 @@ https://flickity.metafizzy.co
             background-color: #01acee;
             font-weight: 300;
             font-size: 20px;
-            margin-top: 0px; } }
+            margin-top: 0px; }
+            .footer-content-form .button:focus {
+              border: 2px solid #fff; } }
       .footer-content-form label {
         position: absolute;
         bottom: 0;
@@ -490,6 +493,75 @@ https://flickity.metafizzy.co
             left: 0;
             color: #fff;
             font-size: 14px; } }
+  .footer-menu {
+    margin-top: 30px;
+    width: 100%; }
+    @media (min-width: 768px) {
+      .footer-menu {
+        margin-top: 50px; } }
+    .footer-menu-property-link {
+      display: inline-block;
+      border: 1px solid #fff;
+      padding: 5px 10px;
+      border-radius: 4px;
+      font-size: 12px;
+      outline: none; }
+      .footer-menu-property-link:hover {
+        background-color: rgba(200, 200, 200, 0.2); }
+      @media (min-width: 768px) {
+        .footer-menu-property-link {
+          font-size: 13px; }
+          .footer-menu-property-link:hover {
+            background-color: rgba(255, 255, 255, 0.3); } }
+    .footer-menu-item {
+      font-size: 12px;
+      text-decoration: underline;
+      font-weight: bold;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      margin-top: 20px;
+      border-top: 1px solid #fff;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap; }
+      @media (min-width: 768px) {
+        .footer-menu-item {
+          font-size: 13px;
+          display: flex;
+          justify-content: space-between; } }
+      .footer-menu-item-link {
+        display: inline-block;
+        padding: 7px 10px; }
+  @media (min-width: 768px) {
+    .footer-nav {
+      width: 100%;
+      margin-top: 30px;
+      display: flex;
+      justify-content: space-between; } }
+  .footer-nav-siteMap {
+    font-size: 13px;
+    text-decoration: underline; }
+    @media (min-width: 768px) {
+      .footer-nav-siteMap {
+        display: none; } }
+    .footer-nav-siteMap .siteMap-link {
+      cursor: pointer; }
+    .footer-nav-siteMap .siteMap-item {
+      flex-wrap: wrap;
+      justify-content: center;
+      display: none; }
+      .footer-nav-siteMap .siteMap-item .siteMap-item-link {
+        padding: 5px 10px; }
+  .footer-nav-item {
+    display: none; }
+    @media (min-width: 768px) {
+      .footer-nav-item {
+        text-align: left;
+        display: block; } }
+    .footer-nav-item-link {
+      font-size: 13px; }
+      .footer-nav-item-link:hover {
+        color: #bc5b01; }
 
 .showCase {
   padding-top: 30px;
@@ -861,7 +933,7 @@ https://flickity.metafizzy.co
         text-decoration: none; }
 
 .section2 {
-  margin-top: 30px; }
+  margin-top: 20px; }
   @media (min-width: 768px) {
     .section2 {
       margin-top: 0px; } }
@@ -1189,7 +1261,7 @@ https://flickity.metafizzy.co
             font-size: 14px; } }
 
 .section5 {
-  margin-top: 40px; }
+  margin-top: 20px; }
   .section5 .container {
     padding-left: 10px;
     padding-right: 10px; }

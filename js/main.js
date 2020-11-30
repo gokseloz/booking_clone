@@ -2,7 +2,7 @@ $(".header-switch").on("click", function () {
     $(".header").toggleClass("menu-show")
 });
 
-
+//Highlights
 var $carousel = $('.highlights-slider').flickity({
     // options
     cellAlign: 'left',
@@ -29,17 +29,9 @@ $carousel.on('staticClick.flickity', function (event, pointer, cellElement, cell
     $carousel.flickity('reposition');
     $carousel.flickity('select', cellIndex);
 });
+//End of Highlights
 
-var tab = $(".list-tab-btn"),
-    content = $(".list-body");
-
-tab.on("click", function () {
-    var i = $(this).index();
-    tab.removeClass('active').eq(i).addClass('active');
-    content.hide().eq(i).fadeIn(1);
-    return false;
-});
-
+//Section-4 Discover
 var $carousel2 = $('.section4-main-box').flickity({
     // options
     cellAlign: 'left',
@@ -51,4 +43,26 @@ var $carousel2 = $('.section4-main-box').flickity({
     prevNextButtons: true,
     pageDots: false
 });
+//End of Section-4 Discover
+
+//Section-5 Destinations we love
+var tab = $(".list-tab-btn"),
+    content = $(".list-body");
+
+tab.on("click", function () {
+    var i = $(this).index();
+    tab.removeClass('active').eq(i).addClass('active');
+    content.hide().eq(i).fadeIn(1);
+    return false;
+});
+//End of Section-5 Destinations we love
+
+
+//clickable link at the bottom - Only works in mobile version
+$(".siteMap-link").on("click", function(){
+    $(".siteMap-item").css("display", "flex")
+})
+//End of clickable link at the bottom - Only works in mobile version
+
+
 

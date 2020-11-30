@@ -15,6 +15,7 @@
     .container {
         background-color: $color-navy;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
     }
@@ -99,7 +100,7 @@
                 background-color: $color-blue;
                 font-weight: 300;
                 font-size: 12px;
-                
+
                 @include mq ("tablet") {
                     width: 35%;
                     height: $finger-size;
@@ -111,6 +112,10 @@
                     font-weight: 300;
                     font-size: 20px;
                     margin-top: 0px;
+                    
+                    &:focus {
+                        border: 2px solid #fff;
+                    }
                 }
             }
 
@@ -127,6 +132,123 @@
                     left: 0;
                     color: #fff;
                     font-size: 14px;
+                }
+            }
+        }
+    }
+
+    &-menu {
+        margin-top: 30px;
+        width: 100%;
+
+        @include mq ("tablet") {
+            margin-top: 50px;
+        }
+
+        &-property {
+            &-link {
+                display: inline-block;
+                border: 1px solid #fff;
+                padding: 5px 10px;
+                border-radius: $border-radius*2;
+                font-size: 12px;
+                outline: none;
+
+                &:hover {
+                    background-color: rgba(200, 200, 200, 0.2);
+                }
+
+
+                @include mq("tablet") {
+                    font-size: 13px;
+
+                    &:hover {
+                        background-color: rgba(255, 255, 255, 0.3);
+                    }
+                }
+            }
+        }
+
+        &-item {
+            font-size: 12px;
+            text-decoration: underline;
+            font-weight: bold;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            margin-top: 20px;
+            border-top: 1px solid #fff;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+
+            @include mq ("tablet") {
+                font-size: 13px;
+                display: flex;
+                justify-content: space-between;
+            }
+
+            &-link {
+                display: inline-block;
+                padding: 7px 10px;
+
+                @include mq ("table") {
+                    font-size: 13px;
+                    display: flex;
+                    justify-content: space-between;
+
+                    &+& {
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+    }
+
+    &-nav {
+
+        @include mq ("tablet") {
+            width: 100%;
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &-siteMap {
+            font-size: 13px;
+            text-decoration: underline;
+
+            @include mq ("tablet") {
+                display: none;
+            }
+
+            .siteMap-link {
+                cursor: pointer;
+            }
+
+            .siteMap-item {
+                flex-wrap: wrap;
+                justify-content: center;
+                display: none;
+
+                .siteMap-item-link {
+                    padding: 5px 10px;
+                }
+            }
+        }
+
+        &-item {
+            display: none;
+
+            @include mq ("tablet") {
+                text-align: left;
+                display: block;
+            }
+
+            &-link {
+                font-size: 13px;
+
+                &:hover {
+                    color: #bc5b01;
                 }
             }
         }
