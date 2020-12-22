@@ -1,8 +1,11 @@
+//header-switch => 770px and below, header is hide, hamburger-menu is created to display the header
 $(".header-switch").on("click", function () {
     $(".header").toggleClass("menu-show")
 });
+//end of header-switch
 
-//Highlights
+
+//Highlighted-cities => Highlighted cities in a draggable slideshow
 var $carousel = $('.highlights-slider').flickity({
     // options
     cellAlign: 'left',
@@ -13,6 +16,7 @@ var $carousel = $('.highlights-slider').flickity({
     prevNextButtons: false,
     pageDots: false
 });
+
 
 $(".highlights-item").eq(0).addClass("is-expanded");
 
@@ -29,9 +33,9 @@ $carousel.on('staticClick.flickity', function (event, pointer, cellElement, cell
     $carousel.flickity('reposition');
     $carousel.flickity('select', cellIndex);
 });
-//End of Highlights
+//End of Highlighted-cities
 
-//Section-4 Discover
+//Section-4-Discover => highlighted countries in a slideshow with prev and next buttons
 var $carousel2 = $('.section4-main-box').flickity({
     // options
     cellAlign: 'left',
@@ -43,9 +47,9 @@ var $carousel2 = $('.section4-main-box').flickity({
     prevNextButtons: true,
     pageDots: false
 });
-//End of Section-4 Discover
+//End of Section-4-Discover
 
-//Section-5 Destinations we love
+//Section-5-Destinations we love
 var tab = $(".list-tab-btn"),
     content = $(".list-body");
 
@@ -55,12 +59,12 @@ tab.on("click", function () {
     content.hide().eq(i).fadeIn(1);
     return false;
 });
-//End of Section-5 Destinations we love
+//End of Section-5-Destinations we love
 
 
 //clickable link at the bottom - Only works in mobile version
 $(".siteMap-link").on("click", function(){
-    $(".siteMap-item").css("display", "flex")
+    $(".siteMap-item").toggleClass("is-expanded ")
 })
 //End of clickable link at the bottom - Only works in mobile version
 

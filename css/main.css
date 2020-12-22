@@ -550,6 +550,8 @@ https://flickity.metafizzy.co
       flex-wrap: wrap;
       justify-content: center;
       display: none; }
+      .footer-nav-siteMap .siteMap-item.is-expanded {
+        display: flex; }
       .footer-nav-siteMap .siteMap-item .siteMap-item-link {
         padding: 5px 10px; }
   .footer-nav-item {
