@@ -33,5 +33,14 @@ link of the series : https://www.youtube.com/watch?v=1AhFCvWS-XE&list=PLadt0EaV4
 <ul>
 <li>In issues, you can find a short video of the website </li>
 &nbsp &nbsp &nbsp OR
-<li>you can reach it: https://user-images.githubusercontent.com/72968539/102824780-c9f45b00-43dd-11eb-8726-5d4de74b376d.mp4 </li>
+<li>you can reach it: https://user-images.githubusercontent.com/72968539/102871856-3d7a8480-443f-11eb-8314-1a6840f37057.mp4 </li>
 </ul>
+
+## ScreenShots
+
+![1](https://user-images.githubusercontent.com/72968539/102872472-035db280-4440-11eb-9f02-73e4616c51c8.png)
+
+![2](https://user-images.githubusercontent.com/72968539/102872557-25efcb80-4440-11eb-9c2e-e72e4a3cffc4.png)
+
+![3](https://user-images.githubusercontent.com/72968539/102872651-4cae0200-4440-11eb-9e4b-0be406f4bb1a.png)
+
