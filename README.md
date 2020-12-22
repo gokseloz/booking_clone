@@ -33,7 +33,7 @@ link of the series : https://www.youtube.com/watch?v=1AhFCvWS-XE&list=PLadt0EaV4
 <ul>
 <li>In issues, you can find a short video of the website </li>
 &nbsp &nbsp &nbsp OR
-<li>you can reach it: https://user-images.githubusercontent.com/72968539/102871856-3d7a8480-443f-11eb-8314-1a6840f37057.mp4 </li>
+<li>you can reach it: <br> https://user-images.githubusercontent.com/72968539/102871856-3d7a8480-443f-11eb-8314-1a6840f37057.mp4 </li>
 </ul>
 
 ## ScreenShots
