@@ -29,6 +29,11 @@ link of the series : https://www.youtube.com/watch?v=1AhFCvWS-XE&list=PLadt0EaV4
 <li>Third breakpoint: 768px </li>
 </ul>
 
+## Live demo
+<ul> 
+<li><a href="https://todo-app-peach.vercel.app/" target="_blank">Todo-app live</a></li>
+</ul>
+
 ## Short Video
 <ul>
 <li>In issues, you can find a short video of the website </li>
