@@ -31,7 +31,7 @@ link of the series : https://www.youtube.com/watch?v=1AhFCvWS-XE&list=PLadt0EaV4
 
 ## Live demo
 <ul> 
-<li><a href="https://booking-clone.vercel.app/" target="_blank">Todo-app live</a></li>
+<li><a href="https://booking-clone.vercel.app/" target="_blank">Booking live</a></li>
 </ul>
 
 ## Short Video
